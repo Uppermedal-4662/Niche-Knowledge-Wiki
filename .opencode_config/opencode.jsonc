@@ -1,0 +1,9 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  
+  "sandbox": {
+    "enabled": true,
+    "provider": "docker",
+    "image": "local-secure-sandbox" 
+  }
+}

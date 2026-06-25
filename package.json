@@ -1,0 +1,11 @@
+{
+  "name": "chat-to-wiki",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "npm run build --workspaces",
+    "dev:backend": "npm run start:dev -w packages/backend",
+    "dev:frontend": "npm run dev -w packages/frontend",
+    "test": "npm run test -w packages/backend"
+  }
+}

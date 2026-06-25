@@ -1,0 +1,2354 @@
+The Agent Skills Directory
+
+[](https://vercel.com "Made with love by Vercel")[Skills](/)
+
+[Topics](/topic)[Official](/official)[Audits](/audits)[Docs](/docs)
+
+# Skills
+
+███████╗██╗  ██╗██╗██╗     ██╗     ███████╗
+██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝
+███████╗█████╔╝ ██║██║     ██║     ███████╗
+╚════██║██╔═██╗ ██║██║     ██║     ╚════██║
+███████║██║  ██╗██║███████╗███████╗███████║
+╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝
+
+The Open Agent Skills Ecosystem
+
+Skills are reusable capabilities for AI agents. Install them with a single command to enhance your agents with access to procedural knowledge.
+
+## Try it now
+
+`$npx skillsadd<owner/repo>`
+
+## Available for these agents
+
+[![Claude Code](/agents/claude-code.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/claude-code)[![Cursor](/agents/cursor.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/cursor)[![Codex](/agents/codex.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/codex)[![GitHub Copilot](/agents/copilot.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/github-copilot)[![Windsurf](/agents/windsurf.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/windsurf)[![Gemini](/agents/gemini.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/gemini)[![Cline](/agents/cline.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/cline)[![AMP](/agents/amp.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/amp)[![Antigravity](/agents/antigravity.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/antigravity)[![ClawdBot](/agents/clawdbot.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/clawdbot)[![Droid](/agents/droid.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/droid)[![Goose](/agents/goose.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/goose)[![Kilo](/agents/kilo.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/kilo)[![Kiro CLI](/agents/kiro-cli.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/kiro-cli)[![Nous Research](/agents/nous-research.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/nous-research)[![OpenCode](/agents/opencode.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/opencode)[![Roo](/agents/roo.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/roo)[![Trae](/agents/trae.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/trae)[![VS Code](/agents/vscode.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/vscode)[![Zed](/agents/zed.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/zed)[![Claude Code](/agents/claude-code.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/claude-code)[![Cursor](/agents/cursor.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/cursor)[![Codex](/agents/codex.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/codex)[![GitHub Copilot](/agents/copilot.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/github-copilot)[![Windsurf](/agents/windsurf.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/windsurf)[![Gemini](/agents/gemini.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/gemini)[![Cline](/agents/cline.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/cline)[![AMP](/agents/amp.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/amp)[![Antigravity](/agents/antigravity.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/antigravity)[![ClawdBot](/agents/clawdbot.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/clawdbot)[![Droid](/agents/droid.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/droid)[![Goose](/agents/goose.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/goose)[![Kilo](/agents/kilo.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/kilo)[![Kiro CLI](/agents/kiro-cli.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/kiro-cli)[![Nous Research](/agents/nous-research.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/nous-research)[![OpenCode](/agents/opencode.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/opencode)[![Roo](/agents/roo.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/roo)[![Trae](/agents/trae.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/trae)[![VS Code](/agents/vscode.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/vscode)[![Zed](/agents/zed.svg?dpl=dpl_DywKPfUgAheFtm7U5EN8Zop1zJDS)](/agent/zed)
+
+## Skills Leaderboard
+
+Search skills...
+
+/
+
+[All Time (738,584)](/)[Trending (24h)](/trending)[Hot](/hot)
+
+#
+
+Skill
+
+8W Activity
+
+Installs
+
+[
+
+1
+
+### find-skills
+
+vercel-labs/skills
+
+2.1M
+
+](/vercel-labs/skills/find-skills)
+
+[
+
+2
+
+### frontend-design
+
+anthropics/skills
+
+555.0K
+
+](/anthropics/skills/frontend-design)
+
+[
+
+3
+
+### vercel-react-best-practices
+
+vercel-labs/agent-skills
+
+482.0K
+
+](/vercel-labs/agent-skills/vercel-react-best-practices)
+
+[
+
+4
+
+### agent-browser
+
+vercel-labs/agent-browser
+
+456.0K
+
+](/vercel-labs/agent-browser/agent-browser)
+
+[
+
+5
+
+### microsoft-foundry
+
+microsoft/azure-skills
+
+396.8K
+
+](/microsoft/azure-skills/microsoft-foundry)
+
+[
+
+6
+
+### web-design-guidelines
+
+vercel-labs/agent-skills
+
+396.3K
+
+](/vercel-labs/agent-skills/web-design-guidelines)
+
+[
+
+7
+
+### azure-ai
+
+microsoft/azure-skills
+
+394.3K
+
+](/microsoft/azure-skills/azure-ai)
+
++14 more frommicrosoft/azure-skills(5.9M total)
+
+[
+
+22
+
+### remotion-best-practices
+
+remotion-dev/skills
+
+375.5K
+
+](/remotion-dev/skills/remotion-best-practices)
+
+[
+
+23
+
+### azure-hosted-copilot-sdk
+
+microsoft/azure-skills
+
+366.0K
+
+](/microsoft/azure-skills/azure-hosted-copilot-sdk)
+
+[
+
+24
+
+### azure-compute
+
+microsoft/azure-skills
+
+336.8K
+
+](/microsoft/azure-skills/azure-compute)
+
+[
+
+25
+
+### grill-me
+
+mattpocock/skills
+
+328.9K
+
+](/mattpocock/skills/grill-me)
+
+[
+
+26
+
+### azure-cloud-migrate
+
+microsoft/azure-skills
+
+326.8K
+
+](/microsoft/azure-skills/azure-cloud-migrate)
+
+[
+
+27
+
+### ai-video-generation
+
+qu-skills/skills
+
+278.1K
+
+](/qu-skills/skills/ai-video-generation)
+
++4 more fromqu-skills/skills(1.4M total)
+
+[
+
+32
+
+### skill-creator
+
+anthropics/skills
+
+273.2K
+
+](/anthropics/skills/skill-creator)
+
+[
+
+33
+
+### improve-codebase-architecture
+
+mattpocock/skills
+
+269.0K
+
+](/mattpocock/skills/improve-codebase-architecture)
+
+[
+
+34
+
+### grill-with-docs
+
+mattpocock/skills
+
+264.1K
+
+](/mattpocock/skills/grill-with-docs)
+
+[
+
+35
+
+### azure-quotas
+
+microsoft/azure-skills
+
+263.6K
+
+](/microsoft/azure-skills/azure-quotas)
+
+[
+
+36
+
+### azure-upgrade
+
+microsoft/azure-skills
+
+256.1K
+
+](/microsoft/azure-skills/azure-upgrade)
+
+[
+
+37
+
+### caveman
+
+juliusbrussee/caveman
+
+255.3K
+
+](/juliusbrussee/caveman/caveman)
+
+[
+
+38
+
+### tdd
+
+mattpocock/skills
+
+253.9K
+
+](/mattpocock/skills/tdd)
+
+[
+
+39
+
+### video-edit
+
+agentspace-so/runcomfy-agent-skills
+
+245.6K
+
+](/agentspace-so/runcomfy-agent-skills/video-edit)
+
++10 more fromagentspace-so/runcomfy-agent-skills(2.7M total)
+
+[
+
+50
+
+### lark-doc
+
+larksuite/cli
+
+242.1K
+
+](/larksuite/cli/lark-doc)
+
++4 more fromlarksuite/cli(1.2M total)
+
+[
+
+55
+
+### lark-approval
+
+open.feishu.cn
+
+240.4K
+
+](/site/open.feishu.cn/lark-approval)
+
+[
+
+56
+
+### lark-calendar
+
+larksuite/cli
+
+240.2K
+
+](/larksuite/cli/lark-calendar)
+
+[
+
+57
+
+### lark-doc
+
+open.feishu.cn
+
+240.2K
+
+](/site/open.feishu.cn/lark-doc)
+
++9 more fromopen.feishu.cn(2.4M total)
+
+[
+
+67
+
+### lark-wiki
+
+larksuite/cli
+
+240.0K
+
+](/larksuite/cli/lark-wiki)
+
+[
+
+68
+
+### lark-sheets
+
+open.feishu.cn
+
+240.0K
+
+](/site/open.feishu.cn/lark-sheets)
+
++7 more fromopen.feishu.cn(1.9M total)
+
+[
+
+76
+
+### lark-whiteboard
+
+larksuite/cli
+
+239.9K
+
+](/larksuite/cli/lark-whiteboard)
+
+[
+
+77
+
+### lark-vc
+
+open.feishu.cn
+
+239.9K
+
+](/site/open.feishu.cn/lark-vc)
+
+[
+
+78
+
+### lark-workflow-meeting-summary
+
+open.feishu.cn
+
+239.9K
+
+](/site/open.feishu.cn/lark-workflow-meeting-summary)
+
+[
+
+79
+
+### lark-workflow-standup-report
+
+open.feishu.cn
+
+239.9K
+
+](/site/open.feishu.cn/lark-workflow-standup-report)
+
+[
+
+80
+
+### lark-sheets
+
+larksuite/cli
+
+239.8K
+
+](/larksuite/cli/lark-sheets)
+
++10 more fromlarksuite/cli(2.6M total)
+
+[
+
+91
+
+### agentspace
+
+agentspace-so/skills
+
+238.1K
+
+](/agentspace-so/skills/agentspace)
+
+[
+
+92
+
+### supabase-postgres-best-practices
+
+supabase/agent-skills
+
+236.0K
+
+](/supabase/agent-skills/supabase-postgres-best-practices)
+
+[
+
+93
+
+### to-prd
+
+mattpocock/skills
+
+235.4K
+
+](/mattpocock/skills/to-prd)
+
+[
+
+94
+
+### sleek-design-mobile-apps
+
+sleekdotdesign/agent-skills
+
+231.5K
+
+](/sleekdotdesign/agent-skills/sleek-design-mobile-apps)
+
+[
+
+95
+
+### azure-enterprise-infra-planner
+
+microsoft/azure-skills
+
+230.1K
+
+](/microsoft/azure-skills/azure-enterprise-infra-planner)
+
+[
+
+96
+
+### brainstorming
+
+obra/superpowers
+
+226.7K
+
+](/obra/superpowers/brainstorming)
+
+[
+
+97
+
+### diagnose
+
+mattpocock/skills
+
+225.8K
+
+](/mattpocock/skills/diagnose)
+
+[
+
+98
+
+### to-issues
+
+mattpocock/skills
+
+225.2K
+
+](/mattpocock/skills/to-issues)
+
+[
+
+99
+
+### azure-kubernetes
+
+microsoft/azure-skills
+
+223.0K
+
+](/microsoft/azure-skills/azure-kubernetes)
+
+[
+
+100
+
+### github-actions-docs
+
+xixu-me/skills
+
+222.6K
+
+](/xixu-me/skills/github-actions-docs)
+
+[
+
+101
+
+### kling-3-0
+
+agentspace-so/runcomfy-agent-skills
+
+221.1K
+
+](/agentspace-so/runcomfy-agent-skills/kling-3-0)
+
+[
+
+102
+
+### lark-okr
+
+open.feishu.cn
+
+220.9K
+
+](/site/open.feishu.cn/lark-okr)
+
+[
+
+103
+
+### ui-ux-pro-max
+
+nextlevelbuilder/ui-ux-pro-max-skill
+
+220.3K
+
+](/nextlevelbuilder/ui-ux-pro-max-skill/ui-ux-pro-max)
+
+[
+
+104
+
+### openclaw-secure-linux-cloud
+
+xixu-me/skills
+
+218.7K
+
+](/xixu-me/skills/openclaw-secure-linux-cloud)
+
++4 more fromxixu-me/skills(1.1M total)
+
+[
+
+109
+
+### write-a-skill
+
+mattpocock/skills
+
+218.1K
+
+](/mattpocock/skills/write-a-skill)
+
+[
+
+110
+
+### readme-i18n
+
+xixu-me/skills
+
+218.0K
+
+](/xixu-me/skills/readme-i18n)
+
+[
+
+111
+
+### zoom-out
+
+mattpocock/skills
+
+217.4K
+
+](/mattpocock/skills/zoom-out)
+
+[
+
+112
+
+### setup-matt-pocock-skills
+
+mattpocock/skills
+
+217.4K
+
+](/mattpocock/skills/setup-matt-pocock-skills)
+
+[
+
+113
+
+### use-my-browser
+
+xixu-me/skills
+
+216.7K
+
+](/xixu-me/skills/use-my-browser)
+
++3 more fromxixu-me/skills(862.1K total)
+
+[
+
+117
+
+### vercel-composition-patterns
+
+vercel-labs/agent-skills
+
+214.2K
+
+](/vercel-labs/agent-skills/vercel-composition-patterns)
+
+[
+
+118
+
+### caveman
+
+mattpocock/skills
+
+212.8K
+
+](/mattpocock/skills/caveman)
+
+[
+
+119
+
+### lark-approval
+
+larksuite/cli
+
+212.8K
+
+](/larksuite/cli/lark-approval)
+
+[
+
+120
+
+### codex-pet
+
+agentspace-so/runcomfy-agent-skills
+
+209.2K
+
+](/agentspace-so/runcomfy-agent-skills/codex-pet)
+
+[
+
+121
+
+### azure-cost-optimization
+
+microsoft/azure-skills
+
+207.5K
+
+](/microsoft/azure-skills/azure-cost-optimization)
+
+[
+
+122
+
+### lark-markdown
+
+open.feishu.cn
+
+205.6K
+
+](/site/open.feishu.cn/lark-markdown)
+
+[
+
+123
+
+### triage
+
+mattpocock/skills
+
+202.8K
+
+](/mattpocock/skills/triage)
+
+[
+
+124
+
+### azure-cost
+
+microsoft/azure-skills
+
+198.5K
+
+](/microsoft/azure-skills/azure-cost)
+
+[
+
+125
+
+### shadcn
+
+shadcn/ui
+
+193.2K
+
+](/shadcn/ui/shadcn)
+
+[
+
+126
+
+### lark-slides
+
+larksuite/cli
+
+192.7K
+
+](/larksuite/cli/lark-slides)
+
+[
+
+127
+
+### lark-attendance
+
+larksuite/cli
+
+191.6K
+
+](/larksuite/cli/lark-attendance)
+
+[
+
+128
+
+### simple
+
+roin-orca/skills
+
+190.9K
+
+](/roin-orca/skills/simple)
+
+[
+
+129
+
+### just-scrape
+
+scrapegraphai/just-scrape
+
+190.3K
+
+](/scrapegraphai/just-scrape/just-scrape)
+
+[
+
+130
+
+### ai-video-generation
+
+agentspace-so/runcomfy-agent-skills
+
+189.4K
+
+](/agentspace-so/runcomfy-agent-skills/ai-video-generation)
+
++10 more fromagentspace-so/runcomfy-agent-skills(2.1M total)
+
+[
+
+141
+
+### lark-vc-agent
+
+open.feishu.cn
+
+184.8K
+
+](/site/open.feishu.cn/lark-vc-agent)
+
+[
+
+142
+
+### relight
+
+agentspace-so/runcomfy-agent-skills
+
+184.7K
+
+](/agentspace-so/runcomfy-agent-skills/relight)
+
+[
+
+143
+
+### video-outpainting
+
+agentspace-so/runcomfy-agent-skills
+
+184.6K
+
+](/agentspace-so/runcomfy-agent-skills/video-outpainting)
+
+[
+
+144
+
+### elevenlabs-music-generation
+
+agentspace-so/runcomfy-agent-skills
+
+184.5K
+
+](/agentspace-so/runcomfy-agent-skills/elevenlabs-music-generation)
+
+[
+
+145
+
+### lark-okr
+
+larksuite/cli
+
+177.0K
+
+](/larksuite/cli/lark-okr)
+
+[
+
+146
+
+### prototype
+
+mattpocock/skills
+
+176.5K
+
+](/mattpocock/skills/prototype)
+
+[
+
+147
+
+### ace-step
+
+agentspace-so/runcomfy-agent-skills
+
+176.3K
+
+](/agentspace-so/runcomfy-agent-skills/ace-step)
+
+[
+
+148
+
+### ai-music
+
+agentspace-so/runcomfy-agent-skills
+
+176.3K
+
+](/agentspace-so/runcomfy-agent-skills/ai-music)
+
+[
+
+149
+
+### handoff
+
+mattpocock/skills
+
+176.0K
+
+](/mattpocock/skills/handoff)
+
+[
+
+150
+
+### develop-userscripts
+
+xixu-me/skills
+
+172.4K
+
+](/xixu-me/skills/develop-userscripts)
+
+[
+
+151
+
+### caveman-commit
+
+juliusbrussee/caveman
+
+164.5K
+
+](/juliusbrussee/caveman/caveman-commit)
+
+[
+
+152
+
+### caveman-review
+
+juliusbrussee/caveman
+
+163.1K
+
+](/juliusbrussee/caveman/caveman-review)
+
+[
+
+153
+
+### impeccable
+
+pbakaus/impeccable
+
+162.6K
+
+](/pbakaus/impeccable/impeccable)
+
+[
+
+154
+
+### caveman-compress
+
+juliusbrussee/caveman
+
+161.3K
+
+](/juliusbrussee/caveman/caveman-compress)
+
+[
+
+155
+
+### caveman-help
+
+juliusbrussee/caveman
+
+156.7K
+
+](/juliusbrussee/caveman/caveman-help)
+
+[
+
+156
+
+### lark-markdown
+
+larksuite/cli
+
+155.5K
+
+](/larksuite/cli/lark-markdown)
+
+[
+
+157
+
+### design-taste-frontend
+
+leonxlnx/taste-skill
+
+155.4K
+
+](/leonxlnx/taste-skill/design-taste-frontend)
+
+[
+
+158
+
+### lark-apps
+
+open.feishu.cn
+
+149.5K
+
+](/site/open.feishu.cn/lark-apps)
+
+[
+
+159
+
+### pptx
+
+anthropics/skills
+
+148.5K
+
+](/anthropics/skills/pptx)
+
+[
+
+160
+
+### systematic-debugging
+
+obra/superpowers
+
+147.3K
+
+](/obra/superpowers/systematic-debugging)
+
+[
+
+161
+
+### using-superpowers
+
+obra/superpowers
+
+146.7K
+
+](/obra/superpowers/using-superpowers)
+
+[
+
+162
+
+### writing-plans
+
+obra/superpowers
+
+146.4K
+
+](/obra/superpowers/writing-plans)
+
+[
+
+163
+
+### seedance-v2
+
+runcomfy-com/skills
+
+144.2K
+
+](/runcomfy-com/skills/seedance-v2)
+
+[
+
+164
+
+### image-to-video
+
+runcomfy-com/skills
+
+144.0K
+
+](/runcomfy-com/skills/image-to-video)
+
+[
+
+165
+
+### image-outpainting
+
+doany-ai/skills
+
+144.0K
+
+](/doany-ai/skills/image-outpainting)
+
+[
+
+166
+
+### controlnet-pose
+
+doany-ai/skills
+
+144.0K
+
+](/doany-ai/skills/controlnet-pose)
+
+[
+
+167
+
+### ai-image-generation
+
+runcomfy-com/skills
+
+144.0K
+
+](/runcomfy-com/skills/ai-image-generation)
+
+[
+
+168
+
+### gpt-image-2
+
+runcomfy-com/skills
+
+144.0K
+
+](/runcomfy-com/skills/gpt-image-2)
+
+[
+
+169
+
+### vercel-react-native-skills
+
+vercel-labs/agent-skills
+
+144.0K
+
+](/vercel-labs/agent-skills/vercel-react-native-skills)
+
+[
+
+170
+
+### runcomfy-cli
+
+doany-ai/skills
+
+144.0K
+
+](/doany-ai/skills/runcomfy-cli)
+
+[
+
+171
+
+### nano-banana-edit
+
+doany-ai/skills
+
+144.0K
+
+](/doany-ai/skills/nano-banana-edit)
+
+[
+
+172
+
+### image-inpainting
+
+runcomfy-com/skills
+
+144.0K
+
+](/runcomfy-com/skills/image-inpainting)
+
+[
+
+173
+
+### ai-avatar-video
+
+doany-ai/skills
+
+143.9K
+
+](/doany-ai/skills/ai-avatar-video)
+
+[
+
+174
+
+### face-swap
+
+runcomfy-com/skills
+
+143.9K
+
+](/runcomfy-com/skills/face-swap)
+
+[
+
+175
+
+### video-inpainting
+
+runcomfy-com/skills
+
+143.9K
+
+](/runcomfy-com/skills/video-inpainting)
+
+[
+
+176
+
+### codex-pet
+
+runcomfy-com/skills
+
+143.9K
+
+](/runcomfy-com/skills/codex-pet)
+
+[
+
+177
+
+### face-swap
+
+doany-ai/skills
+
+143.9K
+
+](/doany-ai/skills/face-swap)
+
++3 more fromdoany-ai/skills(575.4K total)
+
+[
+
+181
+
+### video-edit
+
+runcomfy-com/skills
+
+143.8K
+
+](/runcomfy-com/skills/video-edit)
+
+[
+
+182
+
+### video-outpainting
+
+doany-ai/skills
+
+143.8K
+
+](/doany-ai/skills/video-outpainting)
+
+[
+
+183
+
+### gpt-image-edit
+
+runcomfy-com/skills
+
+143.8K
+
+](/runcomfy-com/skills/gpt-image-edit)
+
+[
+
+184
+
+### elevenlabs-music-generation
+
+runcomfy-com/skills
+
+143.8K
+
+](/runcomfy-com/skills/elevenlabs-music-generation)
+
+[
+
+185
+
+### video-extend
+
+doany-ai/skills
+
+143.7K
+
+](/doany-ai/skills/video-extend)
+
+[
+
+186
+
+### ai-video-generation
+
+runcomfy-com/skills
+
+143.7K
+
+](/runcomfy-com/skills/ai-video-generation)
+
+[
+
+187
+
+### image-inpainting
+
+doany-ai/skills
+
+143.7K
+
+](/doany-ai/skills/image-inpainting)
+
+[
+
+188
+
+### flux-2-klein
+
+doany-ai/skills
+
+143.7K
+
+](/doany-ai/skills/flux-2-klein)
+
+[
+
+189
+
+### controlnet-pose
+
+runcomfy-com/skills
+
+143.7K
+
+](/runcomfy-com/skills/controlnet-pose)
+
+[
+
+190
+
+### ai-music
+
+runcomfy-com/skills
+
+143.7K
+
+](/runcomfy-com/skills/ai-music)
+
+[
+
+191
+
+### runcomfy-cli
+
+runcomfy-com/skills
+
+143.7K
+
+](/runcomfy-com/skills/runcomfy-cli)
+
+[
+
+192
+
+### lipsync
+
+doany-ai/skills
+
+143.7K
+
+](/doany-ai/skills/lipsync)
+
+[
+
+193
+
+### seedance-v2
+
+doany-ai/skills
+
+143.6K
+
+](/doany-ai/skills/seedance-v2)
+
+[
+
+194
+
+### ai-image-generation
+
+doany-ai/skills
+
+143.6K
+
+](/doany-ai/skills/ai-image-generation)
+
+[
+
+195
+
+### lipsync
+
+runcomfy-com/skills
+
+143.6K
+
+](/runcomfy-com/skills/lipsync)
+
++3 more fromruncomfy-com/skills(574.4K total)
+
+[
+
+199
+
+### image-to-video
+
+doany-ai/skills
+
+143.6K
+
+](/doany-ai/skills/image-to-video)
+
+[
+
+200
+
+### ace-step
+
+doany-ai/skills
+
+143.6K
+
+](/doany-ai/skills/ace-step)
+
+[
+
+201
+
+### video-extend
+
+runcomfy-com/skills
+
+143.5K
+
+](/runcomfy-com/skills/video-extend)
+
+[
+
+202
+
+### elevenlabs-music-generation
+
+doany-ai/skills
+
+143.5K
+
+](/doany-ai/skills/elevenlabs-music-generation)
+
+[
+
+203
+
+### video-edit
+
+doany-ai/skills
+
+143.5K
+
+](/doany-ai/skills/video-edit)
+
+[
+
+204
+
+### image-outpainting
+
+runcomfy-com/skills
+
+143.5K
+
+](/runcomfy-com/skills/image-outpainting)
+
+[
+
+205
+
+### relight
+
+runcomfy-com/skills
+
+143.5K
+
+](/runcomfy-com/skills/relight)
+
+[
+
+206
+
+### happyhorse-1-0
+
+runcomfy-com/skills
+
+143.5K
+
+](/runcomfy-com/skills/happyhorse-1-0)
+
+[
+
+207
+
+### image-edit
+
+doany-ai/skills
+
+143.5K
+
+](/doany-ai/skills/image-edit)
+
+[
+
+208
+
+### kling-3-0
+
+doany-ai/skills
+
+143.5K
+
+](/doany-ai/skills/kling-3-0)
+
+[
+
+209
+
+### flux-kontext
+
+runcomfy-com/skills
+
+143.4K
+
+](/runcomfy-com/skills/flux-kontext)
+
+[
+
+210
+
+### gpt-image-edit
+
+doany-ai/skills
+
+143.4K
+
+](/doany-ai/skills/gpt-image-edit)
+
+[
+
+211
+
+### image-edit
+
+runcomfy-com/skills
+
+143.4K
+
+](/runcomfy-com/skills/image-edit)
+
+[
+
+212
+
+### nano-banana-2
+
+runcomfy-com/skills
+
+143.4K
+
+](/runcomfy-com/skills/nano-banana-2)
+
+[
+
+213
+
+### airunway-aks-setup
+
+microsoft/azure-skills
+
+143.4K
+
+](/microsoft/azure-skills/airunway-aks-setup)
+
+[
+
+214
+
+### gpt-image-2
+
+doany-ai/skills
+
+143.4K
+
+](/doany-ai/skills/gpt-image-2)
+
+[
+
+215
+
+### nano-banana-edit
+
+runcomfy-com/skills
+
+143.4K
+
+](/runcomfy-com/skills/nano-banana-edit)
+
+[
+
+216
+
+### flux-kontext
+
+doany-ai/skills
+
+143.4K
+
+](/doany-ai/skills/flux-kontext)
+
+[
+
+217
+
+### wan-2-7
+
+runcomfy-com/skills
+
+143.4K
+
+](/runcomfy-com/skills/wan-2-7)
+
+[
+
+218
+
+### ai-video-generation
+
+doany-ai/skills
+
+143.3K
+
+](/doany-ai/skills/ai-video-generation)
+
+[
+
+219
+
+### video-outpainting
+
+runcomfy-com/skills
+
+143.3K
+
+](/runcomfy-com/skills/video-outpainting)
+
+[
+
+220
+
+### ace-step
+
+runcomfy-com/skills
+
+143.2K
+
+](/runcomfy-com/skills/ace-step)
+
+[
+
+221
+
+### ai-music
+
+doany-ai/skills
+
+143.2K
+
+](/doany-ai/skills/ai-music)
+
+[
+
+222
+
+### wan-2-7
+
+doany-ai/skills
+
+143.1K
+
+](/doany-ai/skills/wan-2-7)
+
+[
+
+223
+
+### video-inpainting
+
+doany-ai/skills
+
+143.1K
+
+](/doany-ai/skills/video-inpainting)
+
+[
+
+224
+
+### paper-context-resolver
+
+lllllllama/ai-paper-reproduction-skill
+
+140.2K
+
+](/lllllllama/ai-paper-reproduction-skill/paper-context-resolver)
+
++3 more fromlllllllama/ai-paper-reproduction-skill(559.3K total)
+
+[
+
+228
+
+### seo-audit
+
+coreyhaines31/marketingskills
+
+138.8K
+
+](/coreyhaines31/marketingskills/seo-audit)
+
+[
+
+229
+
+### pdf
+
+anthropics/skills
+
+136.3K
+
+](/anthropics/skills/pdf)
+
+[
+
+230
+
+### requesting-code-review
+
+obra/superpowers
+
+131.7K
+
+](/obra/superpowers/requesting-code-review)
+
+[
+
+231
+
+### test-driven-development
+
+obra/superpowers
+
+130.2K
+
+](/obra/superpowers/test-driven-development)
+
+[
+
+232
+
+### copywriting
+
+coreyhaines31/marketingskills
+
+128.5K
+
+](/coreyhaines31/marketingskills/copywriting)
+
+[
+
+233
+
+### lark-vc-agent
+
+larksuite/cli
+
+128.2K
+
+](/larksuite/cli/lark-vc-agent)
+
+[
+
+234
+
+### docx
+
+anthropics/skills
+
+127.3K
+
+](/anthropics/skills/docx)
+
+[
+
+235
+
+### high-end-visual-design
+
+leonxlnx/taste-skill
+
+126.8K
+
+](/leonxlnx/taste-skill/high-end-visual-design)
+
+[
+
+236
+
+### supabase
+
+supabase/agent-skills
+
+125.8K
+
+](/supabase/agent-skills/supabase)
+
+[
+
+237
+
+### redesign-existing-projects
+
+leonxlnx/taste-skill
+
+124.5K
+
+](/leonxlnx/taste-skill/redesign-existing-projects)
+
+[
+
+238
+
+### extract-design-system
+
+arvindrk/extract-design-system
+
+123.4K
+
+](/arvindrk/extract-design-system/extract-design-system)
+
+[
+
+239
+
+### find-skills
+
+agentspace-so/skills
+
+123.4K
+
+](/agentspace-so/skills/find-skills)
+
+[
+
+240
+
+### executing-plans
+
+obra/superpowers
+
+120.3K
+
+](/obra/superpowers/executing-plans)
+
+[
+
+241
+
+### entra-agent-id
+
+microsoft/azure-skills
+
+117.7K
+
+](/microsoft/azure-skills/entra-agent-id)
+
+[
+
+242
+
+### minimalist-ui
+
+leonxlnx/taste-skill
+
+116.1K
+
+](/leonxlnx/taste-skill/minimalist-ui)
+
+[
+
+243
+
+### cavecrew
+
+juliusbrussee/caveman
+
+114.6K
+
+](/juliusbrussee/caveman/cavecrew)
+
+[
+
+244
+
+### caveman-stats
+
+juliusbrussee/caveman
+
+114.5K
+
+](/juliusbrussee/caveman/caveman-stats)
+
+[
+
+245
+
+### subagent-driven-development
+
+obra/superpowers
+
+113.2K
+
+](/obra/superpowers/subagent-driven-development)
+
+[
+
+246
+
+### xlsx
+
+anthropics/skills
+
+112.2K
+
+](/anthropics/skills/xlsx)
+
+[
+
+247
+
+### full-output-enforcement
+
+leonxlnx/taste-skill
+
+111.8K
+
+](/leonxlnx/taste-skill/full-output-enforcement)
+
+[
+
+248
+
+### verification-before-completion
+
+obra/superpowers
+
+111.7K
+
+](/obra/superpowers/verification-before-completion)
+
+[
+
+249
+
+### industrial-brutalist-ui
+
+leonxlnx/taste-skill
+
+108.1K
+
+](/leonxlnx/taste-skill/industrial-brutalist-ui)
+
+[
+
+250
+
+### stitch-design-taste
+
+leonxlnx/taste-skill
+
+107.8K
+
+](/leonxlnx/taste-skill/stitch-design-taste)
+
+[
+
+251
+
+### next-best-practices
+
+vercel-labs/next-skills
+
+107.1K
+
+](/vercel-labs/next-skills/next-best-practices)
+
+[
+
+252
+
+### receiving-code-review
+
+obra/superpowers
+
+106.9K
+
+](/obra/superpowers/receiving-code-review)
+
++4 more fromobra/superpowers(522.7K total)
+
+[
+
+257
+
+### hyperframes
+
+heygen-com/hyperframes
+
+100.3K
+
+](/heygen-com/hyperframes/hyperframes)
+
+[
+
+258
+
+### gpt-taste
+
+leonxlnx/taste-skill
+
+100.0K
+
+](/leonxlnx/taste-skill/gpt-taste)
+
+[
+
+259
+
+### azure-observability
+
+microsoft/azure-skills
+
+98.2K
+
+](/microsoft/azure-skills/azure-observability)
+
+[
+
+260
+
+### webapp-testing
+
+anthropics/skills
+
+97.4K
+
+](/anthropics/skills/webapp-testing)
+
+[
+
+261
+
+### hyperframes-cli
+
+heygen-com/hyperframes
+
+97.3K
+
+](/heygen-com/hyperframes/hyperframes-cli)
+
+[
+
+262
+
+### emil-design-eng
+
+emilkowalski/skill
+
+95.8K
+
+](/emilkowalski/skill/emil-design-eng)
+
+[
+
+263
+
+### marketing-psychology
+
+coreyhaines31/marketingskills
+
+94.9K
+
+](/coreyhaines31/marketingskills/marketing-psychology)
+
+[
+
+264
+
+### hyperframes-registry
+
+heygen-com/hyperframes
+
+93.8K
+
+](/heygen-com/hyperframes/hyperframes-registry)
+
+[
+
+265
+
+### gsap
+
+heygen-com/hyperframes
+
+92.2K
+
+](/heygen-com/hyperframes/gsap)
+
+[
+
+266
+
+### content-strategy
+
+coreyhaines31/marketingskills
+
+90.4K
+
+](/coreyhaines31/marketingskills/content-strategy)
+
+[
+
+267
+
+### website-to-hyperframes
+
+heygen-com/hyperframes
+
+89.5K
+
+](/heygen-com/hyperframes/website-to-hyperframes)
+
+[
+
+268
+
+### lark-apps
+
+larksuite/cli
+
+88.2K
+
+](/larksuite/cli/lark-apps)
+
+[
+
+269
+
+### image-to-code
+
+leonxlnx/taste-skill
+
+87.6K
+
+](/leonxlnx/taste-skill/image-to-code)
+
+[
+
+270
+
+### programmatic-seo
+
+coreyhaines31/marketingskills
+
+87.3K
+
+](/coreyhaines31/marketingskills/programmatic-seo)
+
+[
+
+271
+
+### brandkit
+
+leonxlnx/taste-skill
+
+86.9K
+
+](/leonxlnx/taste-skill/brandkit)
+
+[
+
+272
+
+### polish
+
+pbakaus/impeccable
+
+86.1K
+
+](/pbakaus/impeccable/polish)
+
+[
+
+273
+
+### imagegen-frontend-web
+
+leonxlnx/taste-skill
+
+85.7K
+
+](/leonxlnx/taste-skill/imagegen-frontend-web)
+
+[
+
+274
+
+### marketing-ideas
+
+coreyhaines31/marketingskills
+
+84.8K
+
+](/coreyhaines31/marketingskills/marketing-ideas)
+
+### Browse
+
+-   [All skills](/)
+-   [Trending](/trending)
+-   [Hot](/hot)
+-   [Official](/official)
+-   [Security audits](/audits)
+
+### Topics
+
+-   [React](/topic/react)
+-   [Next.js](/topic/nextjs)
+-   [Design & UI](/topic/design)
+-   [Mobile](/topic/mobile)
+-   [Agent workflows](/topic/agent-workflows)
+-   [Databases](/topic/databases)
+-   [Testing](/topic/testing)
+-   [Marketing](/topic/marketing)
+-   [All topics →](/topic)
+
+### Agents
+
+-   [Claude Code](/agent/claude-code)
+-   [Cursor](/agent/cursor)
+-   [Codex](/agent/codex)
+-   [GitHub Copilot](/agent/github-copilot)
+-   [Windsurf](/agent/windsurf)
+-   [Gemini](/agent/gemini)
+-   [Cline](/agent/cline)
+-   [AMP](/agent/amp)
+-   [Antigravity](/agent/antigravity)
+-   [ClawdBot](/agent/clawdbot)
+-   [All agents →](/agent)
+
+### Docs
+
+-   [Overview](/docs)
+-   [CLI](/docs/cli)
+-   [Customize pages](/docs/customize)
+-   [API](/docs/api)
+-   [FAQ](/docs/faq)
+
+### Project
+
+-   [About](/about)
+-   [Contact](/contact)
+-   [Privacy](/privacy)
+-   [Terms](/terms)
+-   [GitHub](https://github.com/vercel-labs/skills)
+
+Made with care by [Vercel](https://vercel.com).Skills are open source on [GitHub](https://github.com/vercel-labs/skills).
