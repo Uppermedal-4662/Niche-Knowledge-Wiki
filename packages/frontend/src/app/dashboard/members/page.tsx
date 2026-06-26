@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useAuth } from '@clerk/nextjs';
 
 interface Member {
   id: string;
@@ -9,20 +10,29 @@ interface Member {
 }
 
 export default function MembersPage() {
+  const { getToken } = useAuth();
   const [members, setMembers] = useState<Member[]>([]);
   const [email, setEmail] = useState('');
   const [loading, setLoading] = useState(true);
 
+  const authHeaders = async () => ({
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${await getToken()}`,
+  });
+
   useEffect(() => {
-    fetch('/api/members')
-      .then((r) => r.json())
-      .then((data) => { setMembers(data); setLoading(false); });
+    (async () => {
+      const res = await fetch('/api/members', { headers: await authHeaders() });
+      const data = await res.json();
+      setMembers(data);
+      setLoading(false);
+    })();
   }, []);
 
   const invite = async () => {
     const res = await fetch('/api/members/invite', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: await authHeaders(),
       body: JSON.stringify({ email, role: 'MEMBER' }),
     });
     if (res.ok) {
@@ -33,7 +43,7 @@ export default function MembersPage() {
   };
 
   const remove = async (id: string) => {
-    await fetch(`/api/members/${id}`, { method: 'DELETE' });
+    await fetch(`/api/members/${id}`, { method: 'DELETE', headers: await authHeaders() });
     setMembers(members.filter((m) => m.id !== id));
   };
 

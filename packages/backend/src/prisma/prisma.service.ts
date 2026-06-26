@@ -2,7 +2,7 @@ import { Injectable, OnModuleInit } from '@nestjs/common';
 import { PrismaClient } from '@prisma/client';
 import { ClsService } from 'nestjs-cls';
 
-const TENANT_MODELS = ['Organization', 'User', 'OrganizationMembership', 'Subscription'];
+const TENANT_MODELS = ['OrganizationMembership', 'Subscription'];
 
 @Injectable()
 export class PrismaService extends PrismaClient implements OnModuleInit {
@@ -10,9 +10,9 @@ export class PrismaService extends PrismaClient implements OnModuleInit {
     super();
     this.$use(async (params, next) => {
       const orgId = this.cls.get<string>('organizationId');
-      if (orgId && params.model && TENANT_MODELS.includes(params.model) && !params.args?.skipTenantFilter) {
+      if (orgId && TENANT_MODELS.includes(params.model ?? '') && !(params.args as any)?.skipTenantFilter) {
         params.args = params.args || {};
-        params.args.where = { ...params.args.where, organizationId: orgId };
+        (params.args as any).where = { ...((params.args as any).where || {}), organizationId: orgId };
       }
       return next(params);
     });

@@ -1,5 +1,6 @@
 import { Injectable, InternalServerErrorException } from '@nestjs/common';
 import Stripe from 'stripe';
+import { Plan, SubscriptionStatus } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
@@ -43,23 +44,23 @@ export class BillingService {
   async activateSubscription(organizationId: string, subscriptionId: string, customerId: string) {
     await this.prisma.organization.update({
       where: { id: organizationId },
-      data: { stripeCustomerId: customerId, plan: 'PRO' },
+      data: { stripeCustomerId: customerId, plan: Plan.PRO },
     });
 
-    const sub = (await this.stripe.subscriptions.retrieve(subscriptionId)) as any;
+    const sub = await this.stripe.subscriptions.retrieve(subscriptionId) as any;
     return this.prisma.subscription.upsert({
       where: { organizationId },
       create: {
         organizationId,
         stripeSubscriptionId: subscriptionId,
-        status: sub.status.toUpperCase(),
+        status: sub.status.toUpperCase() as SubscriptionStatus,
         seats: sub.items.data[0]?.quantity ?? 1,
         currentPeriodStart: sub.current_period_start ? new Date(sub.current_period_start * 1000) : null,
         currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
       },
       update: {
         stripeSubscriptionId: subscriptionId,
-        status: sub.status.toUpperCase(),
+        status: sub.status.toUpperCase() as SubscriptionStatus,
         seats: sub.items.data[0]?.quantity ?? 1,
         currentPeriodStart: sub.current_period_start ? new Date(sub.current_period_start * 1000) : null,
         currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
@@ -68,7 +69,7 @@ export class BillingService {
   }
 
   async syncSubscription(subscriptionId: string) {
-    const sub = (await this.stripe.subscriptions.retrieve(subscriptionId)) as any;
+    const sub = await this.stripe.subscriptions.retrieve(subscriptionId) as any;
     const dbSub = await this.prisma.subscription.findUnique({
       where: { stripeSubscriptionId: subscriptionId },
     });
@@ -77,7 +78,7 @@ export class BillingService {
     return this.prisma.subscription.update({
       where: { id: dbSub.id },
       data: {
-        status: sub.status.toUpperCase(),
+        status: sub.status.toUpperCase() as SubscriptionStatus,
         seats: sub.items.data[0]?.quantity ?? 1,
         currentPeriodStart: sub.current_period_start ? new Date(sub.current_period_start * 1000) : null,
         currentPeriodEnd: sub.current_period_end ? new Date(sub.current_period_end * 1000) : null,
@@ -118,12 +119,12 @@ export class BillingService {
 
     await this.prisma.subscription.update({
       where: { id: dbSub.id },
-      data: { status: 'CANCELED' },
+      data: { status: SubscriptionStatus.CANCELED },
     });
 
     await this.prisma.organization.update({
       where: { id: dbSub.organizationId },
-      data: { plan: 'FREE' },
+      data: { plan: Plan.FREE },
     });
   }
 }

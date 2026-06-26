@@ -1,10 +1,11 @@
 'use client';
 
 import { useState } from 'react';
-import { useOrganization } from '@clerk/nextjs';
+import { useOrganization, useAuth } from '@clerk/nextjs';
 
 export default function SettingsPage() {
   const { organization } = useOrganization();
+  const { getToken } = useAuth();
   const [name, setName] = useState(organization?.name ?? '');
   const [saving, setSaving] = useState(false);
 
@@ -13,7 +14,10 @@ export default function SettingsPage() {
     setSaving(true);
     await fetch(`/api/tenants/${organization.id}`, {
       method: 'PATCH',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${await getToken()}`,
+      },
       body: JSON.stringify({ name }),
     });
     setSaving(false);

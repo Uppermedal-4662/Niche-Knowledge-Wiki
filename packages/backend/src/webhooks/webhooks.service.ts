@@ -1,20 +1,38 @@
 import { Injectable } from '@nestjs/common';
+import { MemberRole, OrgStatus } from '@prisma/client';
+import { Webhook } from 'svix';
 import { PrismaService } from '../prisma/prisma.service';
 
 @Injectable()
 export class WebhooksService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async handleClerkWebhook(body: any): Promise<{ received: boolean }> {
-    const event = body;
+  async handleClerkWebhook(
+    rawBody: string,
+    svixSignature: string,
+    svixId: string,
+    svixTimestamp: string,
+  ): Promise<{ received: boolean }> {
+    const wh = new Webhook(process.env.CLERK_WEBHOOK_SECRET ?? '');
+    let event: { type: string; data: Record<string, any> };
+    try {
+      const payload = wh.verify(rawBody, {
+        'svix-id': svixId,
+        'svix-timestamp': svixTimestamp,
+        'svix-signature': svixSignature,
+      }) as any;
+      event = payload;
+    } catch {
+      return { received: false };
+    }
 
     switch (event.type) {
       case 'organization.created':
         await this.prisma.organization.create({
           data: {
             id: event.data.id,
-            name: event.data.name,
-            slug: event.data.slug,
+            name: event.data.name as string,
+            slug: event.data.slug as string,
           },
         });
         break;
@@ -22,14 +40,14 @@ export class WebhooksService {
       case 'organization.updated':
         await this.prisma.organization.update({
           where: { id: event.data.id },
-          data: { name: event.data.name, slug: event.data.slug },
+          data: { name: event.data.name as string, slug: event.data.slug as string },
         });
         break;
 
       case 'organization.deleted':
         await this.prisma.organization.update({
           where: { id: event.data.id },
-          data: { status: 'SUSPENDED' },
+          data: { status: OrgStatus.SUSPENDED },
         });
         break;
 
@@ -37,7 +55,7 @@ export class WebhooksService {
         await this.prisma.user.create({
           data: {
             id: event.data.id,
-            email: event.data.email_addresses?.[0]?.email_address ?? '',
+            email: (event.data.email_addresses as any[])?.[0]?.email_address ?? '',
             name: [event.data.first_name, event.data.last_name].filter(Boolean).join(' ') || null,
             clerkId: event.data.id,
           },
@@ -48,7 +66,7 @@ export class WebhooksService {
         await this.prisma.user.update({
           where: { clerkId: event.data.id },
           data: {
-            email: event.data.email_addresses?.[0]?.email_address ?? '',
+            email: (event.data.email_addresses as any[])?.[0]?.email_address ?? '',
             name: [event.data.first_name, event.data.last_name].filter(Boolean).join(' ') || null,
           },
         });
@@ -59,7 +77,7 @@ export class WebhooksService {
           data: {
             organizationId: event.data.organization.id,
             userId: event.data.user.id,
-            role: (event.data.role ?? 'MEMBER').toUpperCase(),
+            role: this.parseMemberRole(event.data.role as string),
           },
         });
         break;
@@ -72,7 +90,7 @@ export class WebhooksService {
               userId: event.data.user.id,
             },
           },
-          data: { role: (event.data.role ?? 'MEMBER').toUpperCase() },
+          data: { role: this.parseMemberRole(event.data.role as string) },
         });
         break;
 
@@ -89,5 +107,11 @@ export class WebhooksService {
     }
 
     return { received: true };
+  }
+
+  private parseMemberRole(role: string): MemberRole {
+    const normalized = role.replace('org:', '').toUpperCase();
+    if (normalized === 'ADMIN') return MemberRole.ADMIN;
+    return MemberRole.MEMBER;
   }
 }

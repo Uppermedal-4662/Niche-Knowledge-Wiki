@@ -1,4 +1,5 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
+import { MemberRole } from '@prisma/client';
 import { PrismaService } from '../prisma/prisma.service';
 import { InviteMemberDto } from './dto/invite-member.dto';
 import { UpdateMemberRoleDto } from './dto/update-member-role.dto';
@@ -22,7 +23,7 @@ export class MembersService {
       data: {
         organizationId,
         userId: user.id,
-        role: dto.role ?? 'MEMBER',
+        role: (dto.role as MemberRole) ?? MemberRole.MEMBER,
       },
       include: { user: true },
     });
@@ -43,7 +44,7 @@ export class MembersService {
     if (!membership) throw new NotFoundException('Membership not found');
     return this.prisma.organizationMembership.update({
       where: { id: membershipId },
-      data: { role: dto.role },
+      data: { role: dto.role as MemberRole },
     });
   }
 }

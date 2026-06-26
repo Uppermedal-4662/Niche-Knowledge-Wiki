@@ -1,21 +1,31 @@
 'use client';
 
 import { useState, useEffect } from 'react';
+import { useAuth } from '@clerk/nextjs';
 
 export default function BillingPage() {
+  const { getToken } = useAuth();
   const [subscription, setSubscription] = useState<any>(null);
   const [loading, setLoading] = useState(true);
 
+  const authHeaders = async () => ({
+    'Content-Type': 'application/json',
+    Authorization: `Bearer ${await getToken()}`,
+  });
+
   useEffect(() => {
-    fetch('/api/billing/subscription')
-      .then((r) => r.json())
-      .then((data) => { setSubscription(data); setLoading(false); });
+    (async () => {
+      const res = await fetch('/api/billing/subscription', { headers: await authHeaders() });
+      const data = await res.json();
+      setSubscription(data);
+      setLoading(false);
+    })();
   }, []);
 
   const upgrade = async () => {
     const res = await fetch('/api/billing/checkout', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: await authHeaders(),
       body: JSON.stringify({ priceId: 'price_pro_monthly' }),
     });
     const { url } = await res.json();
@@ -23,7 +33,7 @@ export default function BillingPage() {
   };
 
   const manage = async () => {
-    const res = await fetch('/api/billing/portal');
+    const res = await fetch('/api/billing/portal', { headers: await authHeaders() });
     const { url } = await res.json();
     window.location.href = url;
   };

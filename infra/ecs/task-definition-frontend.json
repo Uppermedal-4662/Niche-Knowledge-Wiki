@@ -5,13 +5,11 @@
   "containerDefinitions": [
     {
       "name": "frontend",
-      "image": "node:20-alpine",
+      "image": "ACCOUNT_ID.dkr.ecr.us-east-1.amazonaws.com/chat-to-wiki-frontend:latest",
       "essential": true,
       "portMappings": [
         { "containerPort": 3000, "protocol": "tcp" }
       ],
-      "command": ["npx", "next", "start", "-p", "3000"],
-      "workingDirectory": "/app/packages/frontend",
       "environment": [
         { "name": "NODE_ENV", "value": "production" }
       ],
